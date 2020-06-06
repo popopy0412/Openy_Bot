@@ -6,8 +6,8 @@ from discord.ext import commands
 
 #client = discord.Client()
 bot = commands.Bot(command_prefix='!')
-token = "NzA4NTgyMzIwNzM4NjY0NDgw.Xr0hfQ.VTrKNDHpw7snfEJD47JIbb_U6Ws"
-userID = "708580420882530366"
+token = ""
+userID = ""
 
 '''@bot.event
 async def on_message(message):
