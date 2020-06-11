@@ -35,6 +35,10 @@ class Basic(commands.Cog, name="기본"):
 
 	@commands.command(name="나가", help="현재 오픈이가 접속해있는 음성 채널에서 접속을 종료합니다!", usage="!나가")
 	async def leave(self, ctx):
+		voice = get(self.bot.voice_clients, guild=ctx.guild)
+		if not voice:
+			await ctx.send("오픈이가 음성 채널에 연결되어 있지 않습니다")
+			return
 		await self.bot.voice_clients[0].disconnect()
 
 def setup(bot):
