@@ -6,7 +6,7 @@ import sys
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
-token = "NzA4NTgyMzIwNzM4NjY0NDgw.XttcSA.ViHHLQUw1Q15ZL7u49f3gk0uEKY"
+token = ""
 cog_list = []
 
 @bot.command(pass_context=True, name="명령어", aliases=["도움말"])
