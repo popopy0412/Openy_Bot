@@ -81,8 +81,6 @@ def main():
 	if has_bin is True:
 		bin_path = os.path.abspath(os.path.realpath("./bin"))
 		print(bin_path)
-		#stream = os.popen(f"setx Path \"%PATH%;{bin_path}\"").read()
-		#print(stream)
 	file = open("./init/config.ini")
 	token = file.readlines()[2][7:].strip()
 	bot.remove_command("help")
@@ -90,4 +88,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-# 할일 : bin 폴더 환경변수 추가하는것
